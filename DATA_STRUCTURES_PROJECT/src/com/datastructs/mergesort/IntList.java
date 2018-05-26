@@ -9,10 +9,10 @@ public class IntList {
     File intFile;
 
 
-    public IntList(File intFile){
+    public IntList(String path){
         this.IntList = new ArrayList<Integer>();
         BufferedReader reader = null;
-        this.intFile = intFile;
+        this.intFile = new File(path);
 
         try {
             reader = new BufferedReader(new FileReader(intFile));

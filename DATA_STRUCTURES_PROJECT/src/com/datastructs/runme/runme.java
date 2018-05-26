@@ -13,13 +13,6 @@ public class runme {
     public static void main(String[] args) {
         System.out.println("Give the path: ");
         Scanner scan = new Scanner(System.in);
-        URI rpath = null;
-        try {
-            rpath = new URI(scan.nextLine());
-        } catch (URISyntaxException e) {
-            e.printStackTrace();
-        }
-        File temp = new File(rpath);
-        IntList intarray = new IntList(temp);
+        IntList intarray = new IntList(scan.nextLine());
     }
 }
